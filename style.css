@@ -165,9 +165,10 @@ p {
     padding: 0;
 }
 .about-template {
+    margin-top: -20px;
     color: black;
     font-family: 'Kaushan Script', sans-serif;
-    font-size: 3vw;
+    font-size: 1.2vw;
     display: flex;
     justify-content: center;
     padding-top: 150px;
@@ -177,9 +178,10 @@ p {
 
 
 .about-welcome {
+    margin-top: -20px;
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3vw;
+    font-size: 1.5vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -191,23 +193,53 @@ p {
 .about-welcome::after {
     content: '';
     border-bottom: 0.20vw solid #f38181;
-    padding-right: 5vw;
-    padding-top: 3vw;
+    padding-right: 3.1vw;
+    padding-top: 2vw;
   }
   
   .about-text {
     align-items: center;
     display: flex;
     padding-top: 3vw;
-    font-size: 1vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    font-size: 0.8vw;
     color: #999999;
     font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 200px;
-    
+    padding-bottom: 6vw;
   }
   .disc-about {
     text-align: center;
     padding-left: 18vw;
     padding-right: 18vw;
+  }
+  .about-showcase {
+    display: flex;
+  }
+  .picture {
+    position: relative;
+    margin-right: 2vw;
+    align-items: center;
+    width: 380px;
+    height: 250px;
+    background-color: black;
+  }
+  .picture-first {
+   background-color:#95e1d3;
+   position: relative;
+  }
+  .overlap {
+    background-image: url(img/first-about.png);
+    position: relative;
+    left: 21vw;
+    top: -0.6vw;
+    z-index: 1;
+  }
+  .picture-second {
+    background-image: url(img/second-about.png);
+  }
+  .picture-third {
+    background-image: url(img/third-about.png);
   }
