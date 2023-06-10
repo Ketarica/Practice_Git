@@ -53,7 +53,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.2vw;
 }
 
 .nav {
@@ -61,13 +61,22 @@ img {
 }
 .nav-list {
     display: flex;
-    gap: 5vw;
+    gap: 2.8vw;
     margin-right: 55px;
 }
 .btn-shop {
     margin-right: 45px;
 }
 
+.nav-link {
+  content: '';
+  border-bottom: 0.25vw solid transparent;
+}
+
+.nav-link:hover {
+    content: '';
+    border-bottom: 0.25vw solid #ffbd07 ;
+}
 
 
 
@@ -80,15 +89,15 @@ img {
 
 .main-template {
     font-family: 'Kaushan Script', sans-serif;
-    font-size: 3vw;
+    font-size: 3.8vw;
     display: flex;
     justify-content: center;
-    padding-top: 150px;
+    padding-top: 130px;
 }
 
 .main-welcome {
     font-family: 'Montserrat', sans-serif;
-    font-size: 7vw;
+    font-size: 7.5vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -97,7 +106,7 @@ img {
     align-content: center;
 }
 .main-welcome-first {
-    margin-top: 2%;
+    margin-top: 1%;
 }
 .main-welcome-second {
     margin-top: -2%;
@@ -105,6 +114,14 @@ img {
     padding-right: 20%;
 }
 
+.up-button::after {
+   display: flex;
+   width: 1.5vw;
+   content: '';
+   border-bottom: 0.20vw solid #ffffff;
+   padding-right: 2vw;
+   padding-top: 2vw;
+}
 
 .button-main {
     display: flex;
@@ -114,13 +131,18 @@ img {
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 900px;
     margin-top: 50px;
     width: 160px;
-    height: 40px;
+    height: 35px;
    
 }
+.button-main:hover {
+  font-size: 0.82vw;
+  background-color: rgb(255, 24, 24);
+  box-shadow: 0 0 0 5px rgb(255, 255, 255); 
+  transition: 2s;
 
+  }
 p {
     margin: 0;
   }
@@ -128,11 +150,10 @@ p {
     margin-left: 15vw;
   }
   .submenu_content {
-    margin: 0;
     padding: 0;
   }
 .submenu_reset {
-   margin-top: 10vw;
+   margin-top: 8vw;
   }
 .submenu_items {
     display: inline-block; 
@@ -145,13 +166,13 @@ p {
   }
 
 .submenu_title::after {
-    content: '';
-    border-top: 0.20vw solid #ffffff;
     padding-right: 10vw;
+    content: '';
   }
   
 
-.submenu_title:hover {
+.submenu_title:hover {  
+    content: '';
     border-top: 0.20vw solid #ff0000 ;
     transition: 2s;
 }
@@ -217,24 +238,19 @@ p {
   }
   .about-showcase {
     display: flex;
+    justify-content: space-evenly;
   }
   .picture {
     position: relative;
-    margin-right: 2vw;
     align-items: center;
     width: 380px;
     height: 250px;
     background-color: black;
   }
+  
   .picture-first {
-   background-color:#95e1d3;
-   position: relative;
-  }
-  .overlap {
     background-image: url(img/first-about.png);
-    position: relative;
-    left: 21vw;
-    top: -0.6vw;
+    position: relative;   
     z-index: 1;
   }
   .picture-second {
