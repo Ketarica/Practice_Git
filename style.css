@@ -237,8 +237,9 @@ p {
     padding-right: 18vw;
   }
   .about-showcase {
+    gap: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
 
@@ -251,6 +252,8 @@ p {
   .picture {
     position: relative;
     align-items: center;
+    margin: 0;
+    padding: 0;
     width: 380px;
     height: 250px;
     background-color: black;
@@ -259,7 +262,6 @@ p {
   .picture-first {
     background: url(img/first-about.png);
     position: relative;   
-   
   }
 
   .picture-first::before {
