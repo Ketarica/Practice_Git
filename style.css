@@ -138,10 +138,10 @@ img {
 }
 .button-main:hover {
   font-size: 0.82vw;
-  background-color: rgb(255, 24, 24);
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 0 0 5px rgb(255, 255, 255); 
-  transition: 2s;
-
+  transition: 0.4s;
+  color:#f8b680;
   }
 p {
     margin: 0;
@@ -240,6 +240,14 @@ p {
     display: flex;
     justify-content: space-evenly;
   }
+
+
+
+/*PICTURE SEGMENT*/
+
+
+
+
   .picture {
     position: relative;
     align-items: center;
@@ -249,13 +257,83 @@ p {
   }
   
   .picture-first {
-    background-image: url(img/first-about.png);
+    background: url(img/first-about.png);
     position: relative;   
-    z-index: 1;
+   
+  }
+
+  .picture-first::before {
+    content: '';
+    background: url(img/RectangleRED.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity .5s;
+  }
+  .picture-first:hover::before {
+    opacity: 0.7;
   }
   .picture-second {
+    position: relative;   
+   
     background-image: url(img/second-about.png);
   }
+  .picture-second::before {
+    content: '';
+    background: url(img/RectangleRED.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity .5s;
+  }
+  .picture-second:hover::before {
+    opacity: 0.7;
+  }
   .picture-third {
+    position: relative;   
     background-image: url(img/third-about.png);
+  }
+  .picture-third::before {
+    content: '';
+    background: url(img/RectangleRED.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity .5s;
+  }
+  .picture-third:hover::before {
+    opacity: 0.7;
+  }
+
+  .overflow {
+   display: flex;
+   position: relative;
+   color: #FFF;
+   font-size: 30px;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+  .overflow:hover {
+    opacity: 1;
+    transition: 2s;
+  }
+ .icon {
+    position: relative;
+    align-items: center;
+    display: flex;
+    z-index: 2;
+   
   }
