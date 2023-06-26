@@ -3,6 +3,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/kaushan-script');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+/*TIMER*/
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+time {
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+}
+time::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 54;
+  }
+}
+/*TIMER*/
+
+
 *{
     margin: 0;
     padding: 0;
