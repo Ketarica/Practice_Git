@@ -210,7 +210,7 @@ p {
 
 
 /*ABOUT US*/ 
-#about-section {
+#section-name {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
@@ -228,7 +228,7 @@ p {
 
 
 
-.about-welcome {
+.section-welcome {
     margin-top: -20px;
     color: black;
     font-family: 'Montserrat', sans-serif;
@@ -241,7 +241,7 @@ p {
     align-content: center;
 }
 
-.about-welcome::after {
+.section-welcome::after {
     content: '';
     border-bottom: 0.20vw solid #f38181;
     padding-right: 3.1vw;
@@ -362,10 +362,39 @@ p {
     opacity: 1;
     transition: 2s;
   }
- .icon {
-    position: relative;
-    align-items: center;
-    display: flex;
-    z-index: 2;
-   
+
+
+  /* NUMBERS PAGE */
+
+  .info-numbers {
+    margin-top: 8vw;
+    height: 270px;
+    width: 100%;
+    background-color: aquamarine;
   }
+
+  /* SERVICES PAGE */
+
+  .services {
+    margin-top: 5vw;
+    margin-left: 17vw;
+    margin-right: 17vw;
+    display: grid;
+    color:black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 150px;
+    grid-auto-columns: 400px;
+  }
+  .disc-services {
+    color:#999999;
+  }
+.photo {
+  gap: 3vw;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  align-content: flex-end;
+}
