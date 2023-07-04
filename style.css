@@ -404,3 +404,28 @@ p {
     left: 20px;
     z-index: 1;
   }
+
+  /* PREVIEW SECTION */
+
+  .feature {
+    margin-top: 10vw;
+    background: url(img/bdForest.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .feature-device {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .device-pic{
+    display: block;
+  }
+
+  .phone {
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    z-index: 1;
+  }
