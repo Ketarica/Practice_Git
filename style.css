@@ -111,9 +111,7 @@ img {
 
 
 
-.section {
-  padding: 80px 0;
-}
+
 
 #main {
     margin: 0;
@@ -220,13 +218,13 @@ p {
     padding: 0;
 }
 .about-template {
-    margin-top: -20px;
+   
     color: black;
     font-family: 'Kaushan Script', sans-serif;
     font-size: 1.2vw;
     display: flex;
     justify-content: center;
-    padding-top: 150px;
+    padding-top: 5vw;
     padding-bottom: 1.4vw;
 }
 
@@ -377,12 +375,50 @@ p {
 
 
   /* NUMBERS PAGE */
+      
+  /*Stats*/
 
+
+  .statistics {
+  background-color: #95e1d3;
+  }
+
+  .stat {
+  display: flex;
+  flex-wrap: wrap;
+  }  
+
+ .stat__item {
+  flex: 1 1 0;
+  padding: 70px 25px;
+
+  border-left: 1px solid #b5eae0;
+
+  text-align: center;
+  color: #fff;
+  } 
+
+.stat__item:last-child {
+  border-right: 1px solid #b5eae0;
+  }
+
+.stat__count {
+  margin-bottom: 10px;
+
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  }
+
+  .stat__text {
+  font-size: 20px;
+  text-transform: uppercase;
+  } 
   .info-numbers {
     margin-top: 8vw;
     height: 270px;
     width: 100%;
-    background-color: aquamarine;
+
   }
 
   /* SERVICES PAGE */
@@ -538,6 +574,9 @@ p {
   .rev {
   position: relative;
   }
+  .review_white {
+    background-color: #fdfdfd;
+  }
     .review {
       position: relative;
       background-color: #f8f8f8;
@@ -649,12 +688,12 @@ p {
   border-left: 2px solid #ccc;
 }
 
-.reviews__btn--prev {
+.reviews__btn-prev {
   left: 0;
   transform: rotate(-45deg);
 }
 
-.reviews__btn--next {
+.reviews__btn-next {
   margin-right: 10vw;
   right: 0;
   transform: rotate(135deg);
@@ -1011,7 +1050,6 @@ p {
 .blog__footer {
   padding-top: 14px;
   border-top: 1px solid #e5e5e5;
-
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
@@ -1254,18 +1292,15 @@ p {
   width: 40%;
   height: 40px;
   padding: 12px 30px;
-
   background-color: #95e1d3;
   border: 0;
   cursor: pointer;
-
   font-family: 'Montserrat', sans-serif;
   font-size: 24x;
   line-height: 1.1;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-
   transition: background .2s linear;
 }
 
@@ -1281,9 +1316,7 @@ p {
 /* Copyright */
 .copyright {
   padding: 20px 0;
-
   border-top: 1px solid #e5e5e5;
-
   font-size: 20px;
   color: #333;
   text-align: center;
@@ -1292,3 +1325,5 @@ p {
 .copyright span {
   color: #f38181;
 }
+
+
